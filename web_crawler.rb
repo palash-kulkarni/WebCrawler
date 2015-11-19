@@ -55,7 +55,7 @@ class WebCrawler
 
   # creates a report of all the links whether those are dead or alive
   def create_report(links, protocol, host_url)
-    CSV.open('without_reporting_manager.csv', 'w+') do |csv|
+    CSV.open('link_details.csv', 'w+') do |csv|
       links.each do |link_name, link_path|
         insert_record(csv, link_name, link_path, protocol, host_url)
       end
