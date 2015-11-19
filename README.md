@@ -6,3 +6,6 @@
 
 #### Dependency :
   Nokogiri Gem
+
+#### How to use it :
+  ruby web_crawler.rb
